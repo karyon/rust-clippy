@@ -37,7 +37,7 @@ declare_lint!{ pub NEEDLESS_RANGE_LOOP, Warn,
 /// **Known problems:** False negatives. We currently only warn on some known types.
 ///
 /// **Example:** `for x in y.iter() { .. }` (where y is a `Vec` or slice)
-declare_lint!{ pub EXPLICIT_ITER_LOOP, Warn,
+declare_lint!{ pub EXPLICIT_ITER_LOOP, Allow,
                "for-looping over `_.iter()` or `_.iter_mut()` when `&_` or `&mut _` would do" }
 
 /// **What it does:** This lint checks for loops on `x.next()`. It is `Warn` by default.
