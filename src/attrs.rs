@@ -21,7 +21,7 @@ use utils::{in_macro, match_path, span_lint};
 /// #[inline(always)]
 /// fn not_quite_hot_code(..) { ... }
 /// ```
-declare_lint! { pub INLINE_ALWAYS, Warn,
+declare_lint! { pub INLINE_ALWAYS, Allow,
     "`#[inline(always)]` is a bad idea in most cases" }
 
 

@@ -18,7 +18,7 @@ use utils::{get_item_name, snippet, span_lint, walk_ptrs_ty};
 /// **Known problems:** None
 ///
 /// **Example:** `if x.len() == 0 { .. }`
-declare_lint!(pub LEN_ZERO, Warn,
+declare_lint!(pub LEN_ZERO, Allow,
               "checking `.len() == 0` or `.len() > 0` (or similar) when `.is_empty()` \
                could be used instead");
 
@@ -34,7 +34,7 @@ declare_lint!(pub LEN_ZERO, Warn,
 ///     fn len(&self) -> usize { .. }
 /// }
 /// ```
-declare_lint!(pub LEN_WITHOUT_IS_EMPTY, Warn,
+declare_lint!(pub LEN_WITHOUT_IS_EMPTY, Allow,
               "traits and impls that have `.len()` but not `.is_empty()`");
 
 #[derive(Copy,Clone)]
