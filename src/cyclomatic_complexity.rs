@@ -18,7 +18,7 @@ use utils::{in_macro, LimitStack};
 /// **Known problems:** Sometimes it's hard to find a way to reduce the complexity
 ///
 /// **Example:** No. You'll see it when you get the warning.
-declare_lint! { pub CYCLOMATIC_COMPLEXITY, Warn,
+declare_lint! { pub CYCLOMATIC_COMPLEXITY, Allow,
     "finds functions that should be split up into multiple functions" }
 
 pub struct CyclomaticComplexity {
