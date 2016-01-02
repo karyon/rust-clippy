@@ -332,7 +332,7 @@ impl LateLintPass for PatternPass {
 /// let y = _x + 1; // Here we are using `_x`, even though it has a leading underscore.
 ///                 // We should rename `_x` to `x`
 /// ```
-declare_lint!(pub USED_UNDERSCORE_BINDING, Warn,
+declare_lint!(pub USED_UNDERSCORE_BINDING, Allow,
               "using a binding which is prefixed with an underscore");
 
 #[derive(Copy, Clone)]
