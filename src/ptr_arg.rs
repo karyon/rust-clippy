@@ -19,7 +19,7 @@ use utils::{STRING_PATH, VEC_PATH};
 /// **Example:** `fn foo(&Vec<u32>) { .. }`
 declare_lint! {
     pub PTR_ARG,
-    Warn,
+    Allow,
     "fn arguments of the type `&Vec<...>` or `&String`, suggesting to use `&[...]` or `&str` \
      instead, respectively"
 }
