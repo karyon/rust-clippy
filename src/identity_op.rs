@@ -13,7 +13,7 @@ use utils::{span_lint, snippet, in_macro};
 /// **Known problems:** None
 ///
 /// **Example:** `x / 1 + 0 * 1 - 0 | 0`
-declare_lint! { pub IDENTITY_OP, Warn,
+declare_lint! { pub IDENTITY_OP, Allow,
                 "using identity operations, e.g. `x + 0` or `y / 1`" }
 
 #[derive(Copy,Clone)]

@@ -35,7 +35,7 @@ declare_lint!(pub BOX_VEC, Warn,
 /// **Known problems:** False positives – the instances where using a `LinkedList` makes sense are few and far between, but they can still happen.
 ///
 /// **Example:** `let x = LinkedList::new();`
-declare_lint!(pub LINKEDLIST, Warn,
+declare_lint!(pub LINKEDLIST, Allow,
               "usage of LinkedList, usually a vector is faster, or a more specialized data \
                structure like a VecDeque");
 
