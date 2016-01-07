@@ -42,7 +42,7 @@ declare_lint!(pub SINGLE_MATCH, Warn,
 ///     _ => frob(&x),
 /// }
 /// ```
-declare_lint!(pub MATCH_REF_PATS, Warn,
+declare_lint!(pub MATCH_REF_PATS, Allow,
               "a match or `if let` has all arms prefixed with `&`; the match expression can be \
                dereferenced instead");
 
