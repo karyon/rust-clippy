@@ -4,8 +4,7 @@
 #![deny(cyclomatic_complexity)]
 #![allow(unused)]
 
-
-fn main() { //~ERROR The function has a cyclomatic complexity of 28
+fn main() { //~ ERROR: The function has a cyclomatic complexity of 28.
     if true {
         println!("a");
     }
